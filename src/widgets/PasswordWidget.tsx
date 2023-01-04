@@ -1,9 +1,9 @@
-import { WidgetProps } from '@rjsf/core';
-import TextWidget from './TextWidget';
 import React from 'react';
 
-const PasswordWidget = (props: WidgetProps) => (
-  <TextWidget {...props} secureEntry={true} />
-);
+import { WidgetProps } from '@rjsf/utils';
+
+import TextWidget from './TextWidget';
+
+const PasswordWidget = (props: WidgetProps) => <TextWidget {...props} secureEntry={true} />;
 
 export default PasswordWidget;
